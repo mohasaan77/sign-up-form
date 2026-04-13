@@ -1,24 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css"/>
-  <title>Sign-up Form</title>
-</head>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"/>
+    <title>Sign-up Form</title>
+  </head>
 
-<body>
-  <div class="sidebar">
-    <div class="logo-container">
-      <img class="logo" src="./images/logo.png"/>
-      <h1 class="logo-text">Angry Cat</h1>
+  <body>
+    <div id="main-container">
+      <div id="left-sidebar">
+        <div id="logo-container">
+          <img src="./resources/logo.png">
+          <h1>ODIN</h1>
+        </div>
+        <p id="credit">Photo from <a href="https://unsplash.com/photos/green-leafed-trees-during-daytime-_EMkxLdko9k" target="_blank">Unsplash</a></p>
+      </div>
+
+      <div id="right-form">
+        <div id="hero-section">
+          <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem doloribus corrupti eum distinctio repellendus, expedita illo neque ex atque facere odit, inventore quae rem officia fugit vel veritatis maiores mollitia?</h1>
+          <h3>You know you want to.</h2>
+        </div>
+
+        <div id="form-container">
+          <h3>Let's do this!</h2>
+
+          <form id="form-rows">
+            <div class="form-input">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" name="first-name">
+            </div>
+
+            <div class="form-input">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" name="last-name">
+            </div>
+
+            <div class="form-input">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-input">
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-input">
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password" name="password">
+            </div>
+
+            <div class="form-input">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input type="password" id="confirm-password" name="confirm-password">
+            </div>
+
+            <div id="separator"></div>
+
+            <button type="submit" id="register-btn">Register</button>
+          </form>
+        </div>
+
+        <p id="login">Already have an account? Log in</p>
+      </div>
     </div>
-
-    <!-- <div class="credit">
-      <p>Photo by Haile West on Unsplash</p>
-    </div> -->
-  </div>
-
-  <div class="form-side"></div>
-</body>
+  </body>
 </html>
